@@ -10,11 +10,6 @@ import { QuizStore } from '../../Store/quizstore';
   styleUrl: './question-presenter.scss'
 })
 export class QuestionPresenter {
-//  readonly question = signal<Question>({
-//    caption: ['Red', 'Green'],
-//    answers: ['Red', 'Green', 'Blue', 'Yellow' ],
-//    correctIndex: 3
-//  });
 readonly store = inject(QuizStore);
 readonly question = this.store.currentQuestion;
 }
